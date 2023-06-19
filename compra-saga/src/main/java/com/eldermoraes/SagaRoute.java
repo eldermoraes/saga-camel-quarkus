@@ -13,10 +13,10 @@ import org.apache.camel.saga.InMemorySagaService;
 public class SagaRoute extends RouteBuilder {
 
     @Inject
-    PedidoService pedidoService;
+    OrderService pedidoService;
 
     @Inject
-    CreditoService creditoService;
+    CreditService creditoService;
 
     @Override
     public void configure() throws Exception {
