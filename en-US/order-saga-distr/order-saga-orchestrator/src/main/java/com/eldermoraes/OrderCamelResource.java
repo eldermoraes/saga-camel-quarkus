@@ -23,10 +23,10 @@ public class OrderCamelResource {
         try{
             Long id = 0L;
 
-            comprar(++id, 20);
-            comprar(++id, 30);
-            comprar(++id, 30);
-            comprar(++id, 25);
+            buy(++id, 20);
+            buy(++id, 30);
+            buy(++id, 30);
+            buy(++id, 25);
     
             return Response.ok().entity("All good").build();
     
@@ -35,7 +35,7 @@ public class OrderCamelResource {
         }
     }
 
-    private void comprar(Long id, int value){
+    private void buy(Long id, int value){
         System.out.println("Order: " + id + " value: " + value);
 
         try{
